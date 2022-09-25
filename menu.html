@@ -3,6 +3,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
+    <title>Menu</title>
+    
     <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
@@ -13,8 +15,8 @@
 <body>
   <div class="sidebar">
     <div class="logo-details">
-        <img src="../RDSI/Imagenes/lagarto.png" width="65" alt="">
-        <div class="logo_name">Social Pogona Henrylawsoni </div>
+        <img src="Imagenes/lagarto.png" width="65" alt="">
+        <div class="logo_name">Plataforma De Mensajeria Electronica</div>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
@@ -70,29 +72,37 @@
   <section class="home-section">
       <div class="text">Dashboard</div>
   </section>
-  <script>
-  let sidebar = document.querySelector(".sidebar");
-  let closeBtn = document.querySelector("#btn");
-  let searchBtn = document.querySelector(".bx-search");
+  
+  <!-- JAVA SCRIPT -->
+<script>
+let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
+//let ussBtn = document.querySelector(".bx-user");
 
-  closeBtn.addEventListener("click", ()=>{
-    sidebar.classList.toggle("open");
-    menuBtnChange();//calling the function(optional)
-  });
+closeBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("open");
+  menuBtnChange();//calling the function(optional)
+});
 
-  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
-    sidebar.classList.toggle("open");
-    menuBtnChange(); //calling the function(optional)
-  });
+searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+  sidebar.classList.toggle("open");
+  menuBtnChange(); //calling the function(optional)
+});
 
-  // following are the code to change sidebar button(optional)
-  function menuBtnChange() {
-   if(sidebar.classList.contains("open")){
-     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
-   }else {
-     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
-   }
-  }
-  </script>
+// ussBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+//   sidebar.classList.toggle("open");
+//   menuBtnChange(); //calling the function(optional)
+// });
+
+// following are the code to change sidebar button(optional)
+function menuBtnChange() {
+ if(sidebar.classList.contains("open")){
+   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+ }else {
+   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+ }
+}
+</script>
 </body>
 </html>
