@@ -5,11 +5,15 @@
     font-size: 25px;
     background-color:#fff;
 }
+*/
 
-.pm
+.textBlack
 {
-    background-color: #fff;
-} */
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: aliceblue;
+} 
 
 h2
 {
@@ -292,6 +296,14 @@ background-position: center center;
 .fondo
 {
   background: url(../Imagenes/correos.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.fondo2
+{
+  background: url(../Imagenes/correos2.png);
   height: 100vh;
   background-position: center;
   background-size: cover;
