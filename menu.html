@@ -4,19 +4,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Menu</title>
-    
-    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
-    <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
   <div class="sidebar">
     <div class="logo-details">
-        <img src="Imagenes/lagarto.png" width="65" alt="">
-        <div class="logo_name">Plataforma De Mensajeria Electronica</div>
+        <img src="#" width="65" alt="">
+        <div class="logo_name">Menu</div>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
@@ -26,11 +24,11 @@
          <span class="tooltip">Search</span>
       </li>
       <li>
-        <a href="#">
-          <i class='bx bx-grid-alt'></i>
-          <span class="links_name">Dashboard</span>
+        <a href="menu.html">
+          <i class='bx bx-home-alt'></i>
+          <span class="links_name">Inicio</span>
         </a>
-         <span class="tooltip">Dashboard</span>
+         <span class="tooltip">Inicio</span>
       </li>
       <li>
        <a href="usuarios.html">
@@ -42,7 +40,7 @@
      <li>
        <a href="#">
          <i class='bx bx-chat' ></i>
-         <span class="links_name">Gestion De Comentarios</span>
+         <span class="links_name">Gestion Comentarios</span>
        </a>
        <span class="tooltip">Comentarios</span>
      </li>
@@ -69,10 +67,39 @@
      </li>
     </ul>
   </div>
-  <section class="home-section">
-      <div class="text">Dashboard</div>
-  </section>
   
+  <!-- SECCION 1 -->
+
+  <!-- NAV VAR-->
+<section class="home-section">
+  <div class="container-fluid container">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#">Correos Corporativos</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-6 mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAV VAR-->
+  </div>
+</section>
+<!-- SECCION 1 -->
+
+
   <!-- JAVA SCRIPT -->
 <script>
 let sidebar = document.querySelector(".sidebar");

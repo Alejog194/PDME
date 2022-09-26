@@ -49,6 +49,7 @@ background-position: center center;
   position: relative;
 }
 .sidebar .logo-details .icon{
+  align-items: center;
   opacity: 0;
   transition: all 0.5s ease;
 }
@@ -83,12 +84,13 @@ background-position: center center;
   height: 60px;
   min-width: 50px;
   font-size: 28px;
-  text-align: center;
+  text-align: left;
   line-height: 60px;
 }
 .sidebar .nav-list{
   margin-top: 20px;
   height: 100%;
+  align-items: left;
 }
 .sidebar li{
   position: relative;
@@ -110,6 +112,7 @@ background-position: center center;
   white-space: nowrap;
   pointer-events: none;
   transition: 0s;
+  align-items: left;
 }
 .sidebar li:hover .tooltip{
   opacity: 1;
@@ -176,10 +179,12 @@ background-position: center center;
   opacity: 0;
   pointer-events: none;
   transition: 0.4s;
+  align-items: left;
 }
 .sidebar.open li a .links_name{
   opacity: 1;
   pointer-events: auto;
+  align-items: left;
 }
 .sidebar li a:hover .links_name,
 .sidebar li a:hover i{
