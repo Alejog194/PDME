@@ -1,18 +1,22 @@
 from flask import Flask, render_template, request
+from formulario import formEstudiante
+import os
+
 
 app = Flask(__name__)
+app.secret_key= os.urandom(24)
 
 
-# Endpoint - API
-@app.route("/") # Ruta
-def home(): # Funcion Manejadora
-    return "Bienvenidos!!!"
+@app.route("/", methods = ["get"])
+def home():
+    return "Hola"
 
 
-# Endpoint - API
-@app.route("/productos/") # Ruta
-def productos(): # Funcion Manejadora
-    return "Listado de productos"
+@app.route("/estudiantes")
+def estudiante():
+    formulario = formEstudiante()
+    return render_template("estudiantes.html", formulario=formulario)
+
 
 
 ######
