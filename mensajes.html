@@ -104,14 +104,34 @@
     <div class="container d-flex flex-column justify-content-center h-100 text-white align-items-center">
       
         <form method="post" action="{{url_for('inbox.send')}}" class="px-4">
-            <label for="to">To</label>
-            <input type="text" name="to" id="to" class="rounded-md mb-2" required>
-            <label for="subject">Subject</label>
-            <input type="text" name="subject" id="subject" class="rounded-md mb-2" required>
-            <label for="body">Body</label>
-            <textarea name="body" id="body" rows="3" class="rounded-md mb-6" required ></textarea>
-          </form>
-        <div>
+          <div class="row g-2">
+            <div class="col-md">
+              <label for="floatingInputGrid" class="text-n"> Correo Para:</label>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+                <!-- <label for="floatingInputGrid">Email address</label> -->
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="col-md">
+                <label for="floatingInputGrid" class="text-n">Asunto Del Correo:</label>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="">
+                  <!-- <label for="floatingInputGrid">Email address</label> -->
+                </div>
+              </div>
+            </div>
+            <div class="my-4">
+            <!-- <label for="floatingInputGrid" class="text-n">Asunto Del Correo:</label> -->
+          </div>
+          <label for="floatingInputGrid" class="text-n">Mensaje Del Correo:</label>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <!-- <label for="floatingTextarea2">Comments</label> -->
+            </div>
+          </div>
+        </form>
+        <div class="my-5">
           <a href="#" class="btn btn-danger">Enviar</a>
         </div>
     </div>
